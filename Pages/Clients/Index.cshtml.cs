@@ -21,7 +21,7 @@ namespace RonneStore.Pages.Clients
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read()) 
+                            while (reader.Read())
                             {
                                 ClientInfo clientInfo = new ClientInfo();
                                 clientInfo.id = "" + reader.GetInt32(0);
